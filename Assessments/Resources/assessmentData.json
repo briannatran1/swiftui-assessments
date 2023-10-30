@@ -1,0 +1,55 @@
+{
+    "count": 8,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "id": 1,
+        "title": "Test-Assessment-1 Title",
+        "status": "published",
+        "api_url": "http://localhost:8000/api/assessmentsessions/1/"
+      },
+      {
+        "id": 2,
+        "title": "Test-Assessment-2 Title",
+        "status": "published",
+        "api_url": "http://localhost:8000/api/assessmentsessions/2/"
+      },
+      {
+        "id": 3,
+        "title": "Test-Assessment-3 Title",
+        "status": "published",
+        "api_url": "http://localhost:8000/api/assessmentsessions/3/"
+      },
+      {
+        "id": 4,
+        "title": "Test-Assessment-4 Title",
+        "status": "published",
+        "api_url": "http://localhost:8000/api/assessmentsessions/4/"
+      },
+      {
+        "id": 5,
+        "title": "Test-Assessment-5 Title",
+        "status": "published",
+        "api_url": "http://localhost:8000/api/assessmentsessions/5/"
+      },
+      {
+        "id": 6,
+        "title": "Test-Assessment-6 Title",
+        "status": "published",
+        "api_url": "http://localhost:8000/api/assessmentsessions/6/"
+      },
+      {
+        "id": 7,
+        "title": "Test-Assessment-7 Title",
+        "status": "published",
+        "api_url": "http://localhost:8000/api/assessmentsessions/7/"
+      },
+      {
+        "id": 8,
+        "title": "Test-Assessment-8 Title",
+        "status": "published",
+        "api_url": "http://localhost:8000/api/assessmentsessions/8/"
+      }
+    ]
+}

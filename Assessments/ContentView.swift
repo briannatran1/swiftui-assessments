@@ -9,13 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+//        HomeView()
+        List(data, id: \.id) { assessment in
+            VStack(alignment: .leading) {
+                Text(assessment.title)
+            }
         }
-        .padding()
+        .onAppear {
+            fetchData()
+        }
+    }
+    
+    func fetchData(){
+        guard let url = URL(string: "http://localhost:8000/api/assessmentsessions/")
     }
 }
 
