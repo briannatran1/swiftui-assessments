@@ -10,6 +10,7 @@ import SwiftUI
 struct AssessmentsList: View {
     
     @State private var assessmentSessions: [AssessmentSessionShort]?
+    @State private var assessments = [Assessment]()
 
     var body: some View {
 //        List(assessmentSessions) { assessment in
@@ -21,7 +22,7 @@ struct AssessmentsList: View {
 //            }
 //        }
         List {
-            ForEach(assessmentSessions) { assessment in
+            ForEach(assessmentSessions, id: \(assessments.id)) { assessment in
                 NavigationLink {
                     AssessmentsDetail(assessment: assessment)
                 } label: {
@@ -31,16 +32,37 @@ struct AssessmentsList: View {
         }
         .navigationTitle("Assessments")
         .task {
-            do {
-                assessmentSessions = try await ViewModel.fetchData().results
-                print(assessmentSessions)
-            } catch {
-                print("error occured")
-            }
+            await fetch()
+        }
+//        .task {
+//            do {
+//                assessmentSessions = try await ViewModel.fetchData().results
+//                print(assessmentSessions)
+//            } catch {
+//                print("error occured")
+//            }
+//        }
+        
+    }
+    func fetch() async {
+        // create url
+        guard let url = URL(string: "http://localhost:8000/api/assessmentsessions/") else {
+            print("URL DOES NOT WORK")
+            return
         }
         
-        
-    } 
+        //fetch data from that url
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            
+            //decode data
+            if let decodedResponse = try? JSONDecoder().decode([Assessment].self, from: data){
+                assessments = decodedResponse
+            }
+        } catch {
+            print("unlucky")
+        }
+    }
 }
 
 struct AssessmentsList_Previews: PreviewProvider {

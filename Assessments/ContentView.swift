@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var viewModel = ViewModel()
+//    @StateObject var viewModel = ViewModel()
     
     var body: some View {
 //      HomeView()
         NavigationView {
-            List {
-                ForEach(viewModel.assessments, id: \.self) { assessment in
+//            List {
+//                ForEach(viewModel.assessments, id: \.self) { assessment in
+//                    HStack{
+//                        Text(assessment.title)
+//                            .bold()
+//                    }
+//                    .padding(3)
+//                }
+//            }
+            List{
+                ForEach(assessments, id: \.self) { assessment in
                     HStack{
                         Text(assessment.title)
                             .bold()
@@ -23,11 +32,12 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Assessments")
-            .onAppear{
-                viewModel.fetchData()
-            }
+//            .onAppear{
+//                viewModel.fetchData()
+//            }
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
