@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    
     var body: some View {
         VStack{
             RithmLogo()
@@ -27,6 +28,7 @@ struct HomeView: View {
                             .foregroundColor(.white)
                             .frame(width: 200, height: 70, alignment: .center)
                             .background(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
+                        
                         
                     }
                     
