@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// can create token in django admin w/o login
+
 struct HomeView: View {
     
     var body: some View {
@@ -26,7 +28,7 @@ struct HomeView: View {
                         Text("See assessments")
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
-                            .frame(width: 200, height: 70, alignment: .center)
+                            .frame(width: 190, height: 50, alignment: .center)
                             .background(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
                         
                         
