@@ -10,20 +10,28 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         VStack{
-            Text("Hello, Rithm student!")
-                .font(.title)
-                .foregroundColor(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
-                .padding()
+            RithmLogo()
+           
             NavigationView{
-                NavigationLink{
-                    NavList()
-                } label: {
-                    Text("See assessments")
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .frame(width: 200, height: 70, alignment: .center)
-                        .background(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
+                VStack{
+                    Text("Hello, Rithm student!")
+                        .font(.title)
+                        .foregroundColor(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
+                        .padding()
+                    NavigationLink{
+                        NavList()
+                            .navigationBarBackButtonHidden(true)
+                    } label: {
+                        Text("See assessments")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.white)
+                            .frame(width: 200, height: 70, alignment: .center)
+                            .background(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
+                        
+                    }
+                    
                 }
+               
             }
            
         }

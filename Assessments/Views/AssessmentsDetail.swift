@@ -11,15 +11,18 @@ struct AssessmentsDetail: View {
     var assessment: AssessmentSession
     
     var body: some View {
-        VStack (alignment: .leading){
-            Text(assessment.title)
-                .font(.title)
-                .padding()
-            Text(assessment.description)
-            
+        ScrollView{
+            VStack (alignment: .leading){
+                Text(assessment.title)
+                    .font(.title)
+                    .padding()
+                Text(assessment.description)
+                
+            }
+            .padding()
         }
-        .padding()
     }
+        
 }
 
 struct AssessmentsDetail_Previews: PreviewProvider {

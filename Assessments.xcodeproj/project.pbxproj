@@ -21,6 +21,8 @@
 		0374C2C12AF0720A002FFA74 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374C2C02AF0720A002FFA74 /* ModelData.swift */; };
 		0374C2C32AF07596002FFA74 /* assessmentData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0374C2C22AF07596002FFA74 /* assessmentData.json */; };
 		0374C2C62AF08161002FFA74 /* AssessmentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374C2C52AF08161002FFA74 /* AssessmentRow.swift */; };
+		4F9948A32AF17EAB0009F074 /* logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 4F9948A22AF17EAB0009F074 /* logo.svg */; };
+		4F9948A52AF17EE70009F074 /* RithmLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9948A42AF17EE70009F074 /* RithmLogo.swift */; };
 		4F9DDF2E2AF0771900AE808E /* AssessmentSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9DDF2D2AF0771900AE808E /* AssessmentSession.swift */; };
 		4F9DDF302AF0783500AE808E /* NavRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9DDF2F2AF0783500AE808E /* NavRow.swift */; };
 		4F9DDF372AF16B1600AE808E /* assessmentDetailData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F9DDF362AF16B1600AE808E /* assessmentDetailData.json */; };
@@ -61,6 +63,8 @@
 		0374C2C02AF0720A002FFA74 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		0374C2C22AF07596002FFA74 /* assessmentData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = assessmentData.json; sourceTree = "<group>"; };
 		0374C2C52AF08161002FFA74 /* AssessmentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentRow.swift; sourceTree = "<group>"; };
+		4F9948A22AF17EAB0009F074 /* logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = logo.svg; sourceTree = "<group>"; };
+		4F9948A42AF17EE70009F074 /* RithmLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RithmLogo.swift; sourceTree = "<group>"; };
 		4F9DDF2D2AF0771900AE808E /* AssessmentSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentSession.swift; sourceTree = "<group>"; };
 		4F9DDF2F2AF0783500AE808E /* NavRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavRow.swift; sourceTree = "<group>"; };
 		4F9DDF362AF16B1600AE808E /* assessmentDetailData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = assessmentDetailData.json; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 		036A6A372AF06887000B1696 = {
 			isa = PBXGroup;
 			children = (
+				4F9948A62AF182EF0009F074 /* Authorization */,
 				036A6A6E2AF06CF2000B1696 /* Homepage */,
 				036A6A422AF06887000B1696 /* Assessments */,
 				036A6A532AF06888000B1696 /* AssessmentsTests */,
@@ -121,6 +126,7 @@
 				0374C2BF2AF071EC002FFA74 /* Model */,
 				036A6A6D2AF06CB4000B1696 /* Views */,
 				036A6A472AF06888000B1696 /* Assets.xcassets */,
+				4F9948A22AF17EAB0009F074 /* logo.svg */,
 				036A6A492AF06888000B1696 /* Preview Content */,
 			);
 			path = Assessments;
@@ -157,6 +163,7 @@
 				0374C2B82AF070A0002FFA74 /* AssessmentsList.swift */,
 				0374C2C52AF08161002FFA74 /* AssessmentRow.swift */,
 				0374C2BA2AF070AC002FFA74 /* AssessmentsDetail.swift */,
+				4F9948A42AF17EE70009F074 /* RithmLogo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +194,13 @@
 				0374C2C22AF07596002FFA74 /* assessmentData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F9948A62AF182EF0009F074 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authorization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +309,7 @@
 			files = (
 				0374C2C32AF07596002FFA74 /* assessmentData.json in Resources */,
 				4F9DDF372AF16B1600AE808E /* assessmentDetailData.json in Resources */,
+				4F9948A32AF17EAB0009F074 /* logo.svg in Resources */,
 				036A6A4B2AF06888000B1696 /* Preview Assets.xcassets in Resources */,
 				036A6A482AF06888000B1696 /* Assets.xcassets in Resources */,
 			);
@@ -323,6 +338,7 @@
 			files = (
 				036A6A462AF06887000B1696 /* ContentView.swift in Sources */,
 				0374C2BE2AF070EA002FFA74 /* NavList.swift in Sources */,
+				4F9948A52AF17EE70009F074 /* RithmLogo.swift in Sources */,
 				0374C2B92AF070A0002FFA74 /* AssessmentsList.swift in Sources */,
 				0374C2BB2AF070AC002FFA74 /* AssessmentsDetail.swift in Sources */,
 				4F9DDF2E2AF0771900AE808E /* AssessmentSession.swift in Sources */,
