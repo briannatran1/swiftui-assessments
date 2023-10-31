@@ -9,24 +9,17 @@ import SwiftUI
 
 struct NavList: View {
     
-
-    
     var body: some View {
-        NavigationSplitView {
-            List {
-                NavigationLink {
+        NavigationSplitView{
+            List{
+                NavigationLink{
                     AssessmentsList()
                 } label: {
-                    AssessmentsList()
-                }
-//                NavigationLink {
-//                    ExerciseList()
-//                } label: {
-//                    ExerciseList()
-//                }
+                    NavRow()
                 }
             }
             .navigationTitle("Categories")
+            
         } detail: {
             Text("Select a Category")
         }

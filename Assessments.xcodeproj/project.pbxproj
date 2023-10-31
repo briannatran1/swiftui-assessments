@@ -22,8 +22,6 @@
 		0374C2C32AF07596002FFA74 /* assessmentData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0374C2C22AF07596002FFA74 /* assessmentData.json */; };
 		4F9DDF2E2AF0771900AE808E /* AssessmentSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9DDF2D2AF0771900AE808E /* AssessmentSession.swift */; };
 		4F9DDF302AF0783500AE808E /* NavRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9DDF2F2AF0783500AE808E /* NavRow.swift */; };
-		4F9DDF332AF07A9E00AE808E /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9DDF322AF07A9E00AE808E /* Categories.swift */; };
-		4F9DDF352AF07B0500AE808E /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9DDF342AF07B0500AE808E /* CategoriesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +60,6 @@
 		0374C2C22AF07596002FFA74 /* assessmentData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = assessmentData.json; sourceTree = "<group>"; };
 		4F9DDF2D2AF0771900AE808E /* AssessmentSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentSession.swift; sourceTree = "<group>"; };
 		4F9DDF2F2AF0783500AE808E /* NavRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavRow.swift; sourceTree = "<group>"; };
-		4F9DDF322AF07A9E00AE808E /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
-		4F9DDF342AF07B0500AE808E /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +159,6 @@
 		036A6A6E2AF06CF2000B1696 /* Homepage */ = {
 			isa = PBXGroup;
 			children = (
-				4F9DDF312AF079F200AE808E /* Model */,
 				036A6A6F2AF06D19000B1696 /* HomeView.swift */,
 				0374C2BD2AF070EA002FFA74 /* NavList.swift */,
 				4F9DDF2F2AF0783500AE808E /* NavRow.swift */,
@@ -186,15 +181,6 @@
 				0374C2C22AF07596002FFA74 /* assessmentData.json */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		4F9DDF312AF079F200AE808E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				4F9DDF322AF07A9E00AE808E /* Categories.swift */,
-				4F9DDF342AF07B0500AE808E /* CategoriesList.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,9 +321,7 @@
 				4F9DDF2E2AF0771900AE808E /* AssessmentSession.swift in Sources */,
 				036A6A442AF06887000B1696 /* AssessmentsApp.swift in Sources */,
 				4F9DDF302AF0783500AE808E /* NavRow.swift in Sources */,
-				4F9DDF332AF07A9E00AE808E /* Categories.swift in Sources */,
 				036A6A702AF06D19000B1696 /* HomeView.swift in Sources */,
-				4F9DDF352AF07B0500AE808E /* CategoriesList.swift in Sources */,
 				0374C2C12AF0720A002FFA74 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

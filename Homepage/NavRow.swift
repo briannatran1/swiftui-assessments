@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct NavRow: View {
-    
     var body: some View {
         HStack{
+            Image(systemName: "doc.plaintext")
             Text("Assessments")
             
             Spacer()
-            }
         }
     }
+}
 
 struct NavRow_Previews: PreviewProvider {
     
