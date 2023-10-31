@@ -9,6 +9,17 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
+//struct AssessmentSession: Hashable, Codable, Identifiable {
+//    var id: Int
+//    var title: String
+//    var status: String
+//    var api_url: String
+//}
+//
+//struct Result: Codable {
+//    var results: [AssessmentSession]
+//}
+
 struct AssessmentSession: Hashable, Codable, Identifiable {
     var id: Int
     var title: String

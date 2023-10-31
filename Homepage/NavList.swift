@@ -18,7 +18,7 @@ struct NavList: View {
                     NavRow()
                 }
             }
-            .navigationTitle("Categories")
+            .navigationTitle("Curriculum")
         }
     }
 }
