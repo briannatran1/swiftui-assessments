@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct AssessmentsList: View {
+    
+    @State private var assessmentSessions: [AssessmentSessionShort]?
+
     var body: some View {
 //        List(assessmentSessions) { assessment in
 ////            VStack(alignment: .leading) {
@@ -27,6 +30,15 @@ struct AssessmentsList: View {
             }
         }
         .navigationTitle("Assessments")
+        .task {
+            do {
+                assessmentSessions = try await ViewModel.fetchData().results
+                print(assessmentSessions)
+            } catch {
+                print("error occured")
+            }
+        }
+        
         
     } 
 }

@@ -38,6 +38,7 @@ class ViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     self?.assessments = assessments
                 }
+                
             }
             catch {
                 print(error)
