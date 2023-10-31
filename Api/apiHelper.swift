@@ -7,13 +7,11 @@
 
 import Foundation
 
-
-
 func getRequest(callback: @escaping (TokenResponse?) -> Void) {
 //    let theToken =  ""
-    let theToken =  "4a41260238aecf13a8a10a0c1df96c6e68571536"
+    let theToken = "4a41260238aecf13a8a10a0c1df96c6e68571536"
     
-    if let url = URL(string: "http://127.0.0.1:8000/api/assessmentsessions") {
+    if let url = URL(string: "https://jsonplaceholder.typicode.com/posts") {
         var request = URLRequest(url: url)
         request.allHTTPHeaderFields = [
             "Content-Type": "application/json",
@@ -34,12 +32,6 @@ func getRequest(callback: @escaping (TokenResponse?) -> Void) {
                 callback(nil)  // <-- here
             }
         }.resume()
-    }
-}
-
-struct ApiHelper: View {
-    getRequest() { results in
-        print(results)
     }
 }
 

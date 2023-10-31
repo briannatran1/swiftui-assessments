@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		036632B82AF1AB7900169B8E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036632B72AF1AB7900169B8E /* ViewModel.swift */; };
 		036A6A442AF06887000B1696 /* AssessmentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A6A432AF06887000B1696 /* AssessmentsApp.swift */; };
 		036A6A462AF06887000B1696 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A6A452AF06887000B1696 /* ContentView.swift */; };
 		036A6A482AF06888000B1696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036A6A472AF06888000B1696 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036632B72AF1AB7900169B8E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		036A6A402AF06887000B1696 /* Assessments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		036A6A432AF06887000B1696 /* AssessmentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentsApp.swift; sourceTree = "<group>"; };
 		036A6A452AF06887000B1696 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				036A6A432AF06887000B1696 /* AssessmentsApp.swift */,
 				036A6A452AF06887000B1696 /* ContentView.swift */,
+				036632B72AF1AB7900169B8E /* ViewModel.swift */,
 				0374C2C42AF075A8002FFA74 /* Resources */,
 				0374C2BF2AF071EC002FFA74 /* Model */,
 				036A6A6D2AF06CB4000B1696 /* Views */,
@@ -348,6 +351,7 @@
 				4F9948AA2AF19FCC0009F074 /* tokenResponse.swift in Sources */,
 				0374C2B92AF070A0002FFA74 /* AssessmentsList.swift in Sources */,
 				4F9948A82AF19F7D0009F074 /* apiHelper.swift in Sources */,
+				036632B82AF1AB7900169B8E /* ViewModel.swift in Sources */,
 				0374C2BB2AF070AC002FFA74 /* AssessmentsDetail.swift in Sources */,
 				4F9DDF2E2AF0771900AE808E /* AssessmentSession.swift in Sources */,
 				036A6A442AF06887000B1696 /* AssessmentsApp.swift in Sources */,

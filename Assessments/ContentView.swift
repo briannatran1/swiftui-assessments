@@ -8,17 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-//        NavList()
-      HomeView()
-//        .onAppear {
-//            fetchData()
-//        }
-    }
+    @StateObject var viewModel = ViewModel()
     
-//    func fetchData(){
-//        guard let url = URL(string: "http://localhost:8000/api/assessmentsessions/")
-//    }
+    var body: some View {
+//      HomeView()
+        NavigationView {
+            List {
+                ForEach(viewModel.assessments, id: \.self) { assessment in
+                    HStack{
+                        Text(assessment.title)
+                            .bold()
+                    }
+                    .padding(3)
+                }
+            }
+            .navigationTitle("Assessments")
+            .onAppear{
+                viewModel.fetchData()
+            }
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
