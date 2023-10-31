@@ -9,14 +9,16 @@ import SwiftUI
 
 struct AssessmentsDetail: View {
     var assessment: AssessmentSession
+    
     var body: some View {
-        VStack{
+        VStack (alignment: .leading){
             Text(assessment.title)
                 .font(.title)
-            HStack{
-                Text(assessment.title)
-            }
+                .padding()
+            Text(assessment.description)
+            
         }
+        .padding()
     }
 }
 

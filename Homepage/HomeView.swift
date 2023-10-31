@@ -9,13 +9,24 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Hello, Rithm student!")
-            .font(.title)
-            .foregroundColor(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
-        
-//        Button {
-//            Label("Sign In", systemImage: "arrow.up")
-//        }
+        VStack{
+            Text("Hello, Rithm student!")
+                .font(.title)
+                .foregroundColor(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
+                .padding()
+            NavigationView{
+                NavigationLink{
+                    NavList()
+                } label: {
+                    Text("See assessments")
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .frame(width: 200, height: 70, alignment: .center)
+                        .background(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
+                }
+            }
+           
+        }
     }
 }
 

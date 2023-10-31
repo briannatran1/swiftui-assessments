@@ -9,12 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        HomeView()
-        List(assessmentSessions) { assessment in
-            VStack(alignment: .leading) {
-                Text(assessment.title)
-            }
-        }
+//        NavList()
+      HomeView()
 //        .onAppear {
 //            fetchData()
 //        }
