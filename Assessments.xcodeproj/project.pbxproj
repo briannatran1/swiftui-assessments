@@ -23,6 +23,7 @@
 		0374C2C62AF08161002FFA74 /* AssessmentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374C2C52AF08161002FFA74 /* AssessmentRow.swift */; };
 		4F9DDF2E2AF0771900AE808E /* AssessmentSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9DDF2D2AF0771900AE808E /* AssessmentSession.swift */; };
 		4F9DDF302AF0783500AE808E /* NavRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9DDF2F2AF0783500AE808E /* NavRow.swift */; };
+		4F9DDF372AF16B1600AE808E /* assessmentDetailData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F9DDF362AF16B1600AE808E /* assessmentDetailData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		0374C2C52AF08161002FFA74 /* AssessmentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentRow.swift; sourceTree = "<group>"; };
 		4F9DDF2D2AF0771900AE808E /* AssessmentSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentSession.swift; sourceTree = "<group>"; };
 		4F9DDF2F2AF0783500AE808E /* NavRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavRow.swift; sourceTree = "<group>"; };
+		4F9DDF362AF16B1600AE808E /* assessmentDetailData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = assessmentDetailData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 		0374C2C42AF075A8002FFA74 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4F9DDF362AF16B1600AE808E /* assessmentDetailData.json */,
 				0374C2C22AF07596002FFA74 /* assessmentData.json */,
 			);
 			path = Resources;
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0374C2C32AF07596002FFA74 /* assessmentData.json in Resources */,
+				4F9DDF372AF16B1600AE808E /* assessmentDetailData.json in Resources */,
 				036A6A4B2AF06888000B1696 /* Preview Assets.xcassets in Resources */,
 				036A6A482AF06888000B1696 /* Assets.xcassets in Resources */,
 			);

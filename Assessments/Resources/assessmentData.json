@@ -1,8 +1,4 @@
-{
-    "count": 8,
-    "next": null,
-    "previous": null,
-    "results": [
+[
       {
         "id": 1,
         "title": "Test-Assessment-1 Title",
@@ -51,5 +47,4 @@
         "status": "published",
         "api_url": "http://localhost:8000/api/assessmentsessions/8/"
       }
-    ]
-}
+]

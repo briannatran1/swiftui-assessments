@@ -7,7 +7,7 @@
 
 import Foundation
 
-var assessmentSessions: [AssessmentSession] = load("assessmentData.json")
+var assessmentSessions: [AssessmentSession] = load("assessmentDetailData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

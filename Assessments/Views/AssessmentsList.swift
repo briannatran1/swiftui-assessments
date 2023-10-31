@@ -9,7 +9,14 @@ import SwiftUI
 
 struct AssessmentsList: View {
     var body: some View {
-        Text("Assessment listing here")
+        List(assessmentSessions) { assessment in
+//            VStack(alignment: .leading) {
+            NavigationLink {
+                AssessmentsDetail(assessment:assessment)
+            } label: {
+                AssessmentRow(assessment: assessment)
+            }
+        }
     }
 }
 

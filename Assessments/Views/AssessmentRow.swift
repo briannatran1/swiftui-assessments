@@ -22,6 +22,6 @@ struct AssessmentRow: View {
 
 struct AssessmentRow_Previews: PreviewProvider {
     static var previews: some View {
-        AssessmentRow(assessment: assessmentSessions.results[0])
+        AssessmentRow(assessment: assessmentSessions[0])
     }
 }
