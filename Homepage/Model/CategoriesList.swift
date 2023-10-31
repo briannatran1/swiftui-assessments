@@ -1,13 +1,13 @@
 //
-//  ModelData.swift
+//  CategoriesList.swift
 //  Assessments
 //
-//  Created by bri on 10/30/23.
+//  Created by Evan Ishibashi on 10/30/23.
 //
 
 import Foundation
 
-var assessmentSessions: [AssessmentSession] = load("assessmentData.json")
+var categoryList: [Category] = [load("assessmentData.json")]
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

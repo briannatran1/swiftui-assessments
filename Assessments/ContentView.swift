@@ -10,19 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
 //        HomeView()
-        List(data, id: \.id) { assessment in
+        List(assessmentSessions) { assessment in
             VStack(alignment: .leading) {
                 Text(assessment.title)
             }
         }
-        .onAppear {
-            fetchData()
-        }
+//        .onAppear {
+//            fetchData()
+//        }
     }
     
-    func fetchData(){
-        guard let url = URL(string: "http://localhost:8000/api/assessmentsessions/")
-    }
+//    func fetchData(){
+//        guard let url = URL(string: "http://localhost:8000/api/assessmentsessions/")
+//    }
 }
 
 struct ContentView_Previews: PreviewProvider {

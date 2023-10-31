@@ -8,9 +8,27 @@
 import SwiftUI
 
 struct NavList: View {
+    
+
+    
     var body: some View {
-        List {
-            
+        NavigationSplitView {
+            List {
+                NavigationLink {
+                    AssessmentsList()
+                } label: {
+                    AssessmentsList()
+                }
+//                NavigationLink {
+//                    ExerciseList()
+//                } label: {
+//                    ExerciseList()
+//                }
+                }
+            }
+            .navigationTitle("Categories")
+        } detail: {
+            Text("Select a Category")
         }
     }
 }
