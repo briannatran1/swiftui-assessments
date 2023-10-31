@@ -15,9 +15,9 @@ struct AssessmentsDetail: View {
             VStack (alignment: .leading){
                 Text(assessment.title)
                     .font(.title)
+                    .foregroundColor(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
                     .padding()
                 Text(assessment.description)
-                
             }
             .padding()
         }
