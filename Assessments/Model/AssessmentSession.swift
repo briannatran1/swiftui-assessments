@@ -42,9 +42,9 @@ struct AssessmentDetail: Codable, Identifiable, Hashable {
     var title: String
     var description: String
     var dri: String
-    var week_group: String
-    var start_at: String
-    var end_at: String
+    var weekGroup: String
+    var startAt: String
+    var endAt: String
 //    var require_github_url: Bool
 //    var require_deployment_url: Bool
 //    var require_zipfile: Bool

@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct AssessmentsDetail: View {
+
     var assessment: Assessment
     
-    @State private var assessmentDetail: Assessment?
+    @State private var assessmentDetail: AssessmentDetail?
     
     var body: some View {
         ScrollView{
             VStack (alignment: .leading){
-                Text(assessment.title)
+                Text(assessmentDetail?.title ?? "placeholder Title")
                     .font(.title)
                     .foregroundColor(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
                     .padding()
-                var x = print(assessment)
-//                Text(assessment.description)
+                Text(assessmentDetail?.description ?? "placeholder Description")
             }
             .padding()
             .task {

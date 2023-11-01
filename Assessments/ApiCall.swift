@@ -10,9 +10,9 @@ import SwiftUI
 
 // gets all assessments for listing
 func getAssessments() async throws -> AssessmentsResponse {
-//        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
-        let token = "544d4d1b2635c36b9aee42dfedc884d44bd3e1ae"
-        guard let url = URL(string: "http://localhost:8000/api/assessmentsessions/") else {
+        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
+//        let token = "544d4d1b2635c36b9aee42dfedc884d44bd3e1ae"
+        guard let url = URL(string: "http://127.0.0.1:8000/api/assessmentsessions/") else {
             fatalError("Invalid URL")
         }
         var request = URLRequest(url: url)
@@ -29,10 +29,10 @@ func getAssessments() async throws -> AssessmentsResponse {
 }
 
 // gets assessment details for specific assessment based on id
-func getAssessmentDetails(id: Int) async throws -> Assessment {
-//        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
-        let token = "544d4d1b2635c36b9aee42dfedc884d44bd3e1ae"
-        guard let url = URL(string: "http://localhost:8000/api/assessmentsessions/\(id)") else {
+func getAssessmentDetails(id: Int) async throws -> AssessmentDetail {
+        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
+//        let token = "544d4d1b2635c36b9aee42dfedc884d44bd3e1ae"
+        guard let url = URL(string: "http://127.0.0.1:8000/api/assessmentsessions/\(id)/") else {
             fatalError("Invalid URL")
         }
         var request = URLRequest(url: url)
@@ -41,9 +41,10 @@ func getAssessmentDetails(id: Int) async throws -> Assessment {
         request.setValue("application/json", forHTTPHeaderField: "accept")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
-        let (data, _) = try await URLSession.shared.data(for: request)
+        let (data, response) = try await URLSession.shared.data(for: request)
         let decoder = JSONDecoder()
+        print(response)
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let assessmentData = try decoder.decode(Assessment.self, from: data)
+        let assessmentData = try decoder.decode(AssessmentDetail.self, from: data)
         return assessmentData
 }
