@@ -10,7 +10,7 @@ import SwiftUI
 struct AssessmentsList: View {
     var body: some View {
         List {
-            ForEach(assessmentSessions) { assessment in
+            ForEach(assessmentSessions.results) { assessment in
                 NavigationLink {
                     AssessmentsDetail(assessment: assessment)
                 } label: {

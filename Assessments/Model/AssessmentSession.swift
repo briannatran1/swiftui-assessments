@@ -9,16 +9,28 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-struct AssessmentSession: Hashable, Codable, Identifiable {
-    var id: Int
-    var title: String
-    var status: String
-    var cohort: String
-    var description: String
-    var dri: String
-    var week_group: String
-    var start_at: String
-    var end_at: String
-    var api_url: String
+//struct AssessmentSession: Hashable, Codable, Identifiable {
+//    var id: Int
+//    var title: String
+//    var status: String
+//    var cohort: String
+//    var description: String
+//    var dri: String
+//    var week_group: String
+//    var start_at: String
+//    var end_at: String
+//    var api_url: String
+//}
+
+struct AssessmentsResponse: Codable {
+    let count: Int
+    let next, previous: String?
+    let results: [Assessment]
 }
 
+struct Assessment: Codable, Identifiable {
+    let id: Int
+    let title: String
+    let status: String
+    let api_url: String
+}

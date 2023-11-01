@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AssessmentsDetail: View {
-    var assessment: AssessmentSession
+    var assessment: Assessment
     
     var body: some View {
         ScrollView{
@@ -17,7 +17,7 @@ struct AssessmentsDetail: View {
                     .font(.title)
                     .foregroundColor(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
                     .padding()
-                Text(assessment.description)
+//                Text(assessment.description)
             }
             .padding()
         }
@@ -27,6 +27,6 @@ struct AssessmentsDetail: View {
 
 struct AssessmentsDetail_Previews: PreviewProvider {
     static var previews: some View {
-        AssessmentsDetail(assessment:assessmentSessions[0])
+        AssessmentsDetail(assessment: assessmentSessions.results[0])
     }
 }
