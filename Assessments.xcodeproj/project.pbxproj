@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		036632BA2AF2BA6C00169B8E /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036632B92AF2BA6C00169B8E /* ApiCall.swift */; };
+		036632BC2AF2C2EA00169B8E /* ModelDataForDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036632BB2AF2C2EA00169B8E /* ModelDataForDetails.swift */; };
 		036A6A442AF06887000B1696 /* AssessmentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A6A432AF06887000B1696 /* AssessmentsApp.swift */; };
 		036A6A462AF06887000B1696 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036A6A452AF06887000B1696 /* ContentView.swift */; };
 		036A6A482AF06888000B1696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036A6A472AF06888000B1696 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		036632B92AF2BA6C00169B8E /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		036632BB2AF2C2EA00169B8E /* ModelDataForDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataForDetails.swift; sourceTree = "<group>"; };
 		036A6A402AF06887000B1696 /* Assessments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		036A6A432AF06887000B1696 /* AssessmentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentsApp.swift; sourceTree = "<group>"; };
 		036A6A452AF06887000B1696 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				0374C2C02AF0720A002FFA74 /* ModelData.swift */,
+				036632BB2AF2C2EA00169B8E /* ModelDataForDetails.swift */,
 				4F9DDF2D2AF0771900AE808E /* AssessmentSession.swift */,
 			);
 			path = Model;
@@ -342,6 +345,7 @@
 				036A6A462AF06887000B1696 /* ContentView.swift in Sources */,
 				0374C2BE2AF070EA002FFA74 /* NavList.swift in Sources */,
 				4F9948A52AF17EE70009F074 /* RithmLogo.swift in Sources */,
+				036632BC2AF2C2EA00169B8E /* ModelDataForDetails.swift in Sources */,
 				0374C2B92AF070A0002FFA74 /* AssessmentsList.swift in Sources */,
 				0374C2BB2AF070AC002FFA74 /* AssessmentsDetail.swift in Sources */,
 				4F9DDF2E2AF0771900AE808E /* AssessmentSession.swift in Sources */,

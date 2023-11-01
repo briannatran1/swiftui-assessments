@@ -1,15 +1,15 @@
 //
-//  ModelData.swift
+//  ModelDataForDetails.swift
 //  Assessments
 //
-//  Created by bri on 10/30/23.
+//  Created by bri on 11/1/23.
 //
 
 import Foundation
 
-var assessmentSessions: AssessmentsResponse = loadAssessmentSessions("assessmentData.json")
+var assessmentDetails: [AssessmentDetail] = loadAssessmentDetails("assessmentDetailData.json")
 
-func loadAssessmentSessions<T: Decodable>(_ filename: String) -> T {
+func loadAssessmentDetails<T: Decodable>(_ filename: String) -> T {
     let data: Data
     
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
@@ -30,3 +30,4 @@ func loadAssessmentSessions<T: Decodable>(_ filename: String) -> T {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
 }
+

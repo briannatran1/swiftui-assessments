@@ -34,3 +34,19 @@ struct Assessment: Codable, Identifiable {
     let status: String
     let api_url: String
 }
+
+struct AssessmentDetail: Codable, Identifiable, Hashable {
+    var id: Int
+    var assessment: String
+    var cohort: String
+    var title: String
+    var description: String
+    var dri: String
+    var week_group: String
+    var start_at: String
+    var end_at: String
+//    var require_github_url: Bool
+//    var require_deployment_url: Bool
+//    var require_zipfile: Bool
+//    var is_pass_fail: Bool
+}

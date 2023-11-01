@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AssessmentRow: View {
-    var assessment: Assessment
+    var assessment: AssessmentDetail
     
     var body: some View {
         HStack{
@@ -22,6 +22,6 @@ struct AssessmentRow: View {
 
 struct AssessmentRow_Previews: PreviewProvider {
     static var previews: some View {
-        AssessmentRow(assessment: assessmentSessions.results[0])
+        AssessmentRow(assessment: assessmentDetails[0])
     }
 }
