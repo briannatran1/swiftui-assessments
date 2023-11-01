@@ -23,7 +23,6 @@ struct AssessmentsList: View {
         .task {
             do{
                 assessments = try await getAssessments()
-                print(assessments)
             } catch {
                 print(error)
             }

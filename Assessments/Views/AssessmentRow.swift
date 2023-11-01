@@ -9,12 +9,10 @@ import SwiftUI
 
 struct AssessmentRow: View {
     var assessment: Assessment
-    
     var body: some View {
         HStack{
             Image(systemName: "doc.plaintext")
             Text(assessment.title)
-            
             Spacer()
         }
     }
