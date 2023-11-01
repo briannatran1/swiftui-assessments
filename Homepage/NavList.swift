@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct NavList: View {
-    
+    var curric = ["assessmentsessions", "students"]
     var body: some View {
         NavigationView{
             List{
                 NavigationLink{
                     AssessmentsList()
                 } label: {
-                    NavRow()
+                    AssessmentsNavRow()
+                }
+                NavigationLink{
+                    StudentsList()
+                } label: {
+                    StudentsNavRow()
                 }
             }
-            .navigationTitle("Categories")
+            .navigationTitle("Curriculum")
         }
     }
 }

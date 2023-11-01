@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NavRow: View {
+struct AssessmentsNavRow: View {
     var body: some View {
         HStack{
             Image(systemName: "doc.plaintext")
@@ -18,11 +18,11 @@ struct NavRow: View {
     }
 }
 
-struct NavRow_Previews: PreviewProvider {
+struct AssessmentsNavRow_Previews: PreviewProvider {
     
     static var previews: some View {
         VStack{
-            NavRow()
+            AssessmentsNavRow()
         }
     }
 }

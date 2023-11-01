@@ -24,7 +24,7 @@ struct HomeView: View {
                         NavList()
                             .navigationBarBackButtonHidden(true)
                     } label: {
-                        Text("See assessments")
+                        Text("Go To Cohort Curriculum")
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
                             .frame(width: 190, height: 50, alignment: .center)

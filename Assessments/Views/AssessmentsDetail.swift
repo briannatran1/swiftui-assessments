@@ -51,7 +51,7 @@ struct AssessmentsDetail: View {
             .padding()
             .task {
                 do{
-                    assessmentDetail = try await getAssessmentDetails(id: assessment.id)
+                    assessmentDetail = try await getAssessmentDetails(id: assessment.)
                 } catch {
                     print(error)
                 }
