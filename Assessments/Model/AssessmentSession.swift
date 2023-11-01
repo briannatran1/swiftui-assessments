@@ -32,7 +32,7 @@ struct Assessment: Codable, Identifiable {
     let id: Int
     let title: String
     let status: String
-    let api_url: String
+    let apiUrl: String
 }
 
 struct AssessmentDetail: Codable, Identifiable, Hashable {

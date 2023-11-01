@@ -11,14 +11,7 @@ struct ContentView: View {
     var body: some View {
 //        NavList()
       HomeView()
-//        .onAppear {
-//            fetchData()
-//        }
     }
-    
-//    func fetchData(){
-//        guard let url = URL(string: "http://localhost:8000/api/assessmentsessions/")
-//    }
 }
 
 struct ContentView_Previews: PreviewProvider {

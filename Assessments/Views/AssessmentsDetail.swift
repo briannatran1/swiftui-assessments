@@ -25,8 +25,8 @@ struct AssessmentsDetail: View {
         
 }
 
-//struct AssessmentsDetail_Previews: PreviewProvider {
-//    static var previews: some View {
-//        AssessmentsDetail(assessment: assessment[0])
-//    }
-//}
+struct AssessmentsDetail_Previews: PreviewProvider {
+    static var previews: some View {
+        AssessmentsDetail(assessment: testAssessmentSessions.results[0])
+    }
+}

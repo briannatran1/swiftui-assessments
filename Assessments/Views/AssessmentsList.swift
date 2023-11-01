@@ -23,11 +23,11 @@ struct AssessmentsList: View {
         .task {
             do{
                 assessments = try await getAssessments()
+                print(assessments)
             } catch {
-                print("unexpected error")
+                print(error)
             }
         }
-        
     } 
 }
 

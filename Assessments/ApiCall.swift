@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 
 func getAssessments() async throws -> AssessmentsResponse {
-        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
-//        let token = "Brianna's token here"
-        guard let url = URL(string: "http://127.0.0.1:8000/api/assessmentsessions/") else {
+//        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
+        let token = "544d4d1b2635c36b9aee42dfedc884d44bd3e1ae"
+        guard let url = URL(string: "http://localhost:8000/api/assessmentsessions/") else {
             fatalError("Invalid URL")
         }
         var request = URLRequest(url: url)
@@ -24,6 +24,5 @@ func getAssessments() async throws -> AssessmentsResponse {
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             let assessmentData = try decoder.decode(AssessmentsResponse.self, from: data)
-            print(assessmentData)
-            return(assessmentData)
-    }
+        return assessmentData
+}
