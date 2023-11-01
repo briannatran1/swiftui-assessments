@@ -7,7 +7,7 @@
 
 import Foundation
 
-var assessmentDetails: [AssessmentDetail] = loadAssessmentDetails("assessmentDetailData.json")
+var testAssessmentDetails: [AssessmentDetail] = loadAssessmentDetails("assessmentDetailData.json")
 
 func loadAssessmentDetails<T: Decodable>(_ filename: String) -> T {
     let data: Data

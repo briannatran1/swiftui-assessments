@@ -20,7 +20,33 @@ struct AssessmentsDetail: View {
                     .font(.title)
                     .foregroundColor(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
                     .padding()
+                
+                Text(assessmentDetail?.weekGroup ?? "placeholder week group")
+                    .fontWeight(.semibold)
+                    .padding()
+                
                 Text(assessmentDetail?.description ?? "placeholder Description")
+                    .padding()
+                
+                HStack{
+                    Text("Start date:")
+                        .padding(.leading, 15)
+                    
+                    Text(assessmentDetail?.startAt ?? "placeholder start date")
+                        .font(.callout)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.gray)
+                }
+                HStack{
+                    Text("End date:")
+                        .padding(.leading, 15)
+                    
+                    Text(assessmentDetail?.endAt ?? "placeholder start date")
+                        .font(.callout)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.gray)
+                }
+                
             }
             .padding()
             .task {
@@ -31,13 +57,11 @@ struct AssessmentsDetail: View {
                 }
             }
         }
-        
     }
-        
 }
 
 //struct AssessmentsDetail_Previews: PreviewProvider {
 //    static var previews: some View {
-//        AssessmentsDetail(assessment: assessmentDetails[0])
+//        AssessmentsDetail(assessment: Assessment[0])
 //    }
 //}
