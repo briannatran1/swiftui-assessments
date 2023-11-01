@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct AssessmentsList: View {
+    @State private var assessments: AssessmentsResponse?
     var body: some View {
         List {
-            ForEach(assessmentDetails, id: \.self) { assessment in
+            ForEach(assessments?.results ?? []) { assessment in
                 NavigationLink {
                     AssessmentsDetail(assessment: assessment)
                 } label: {
@@ -19,6 +20,13 @@ struct AssessmentsList: View {
             }
         }
         .navigationTitle("Assessments")
+        .task {
+            do{
+                assessments = try await getAssessments()
+            } catch {
+                print("unexpected error")
+            }
+        }
         
     } 
 }

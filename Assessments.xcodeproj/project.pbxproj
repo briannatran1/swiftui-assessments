@@ -102,8 +102,8 @@
 		036A6A372AF06887000B1696 = {
 			isa = PBXGroup;
 			children = (
-				4F9948A62AF182EF0009F074 /* Authorization */,
 				036A6A6E2AF06CF2000B1696 /* Homepage */,
+				4F99491F2AF2D7260009F074 /* API */,
 				036A6A422AF06887000B1696 /* Assessments */,
 				036A6A532AF06888000B1696 /* AssessmentsTests */,
 				036A6A5D2AF06889000B1696 /* AssessmentsUITests */,
@@ -202,11 +202,11 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		4F9948A62AF182EF0009F074 /* Authorization */ = {
+		4F99491F2AF2D7260009F074 /* API */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Authorization;
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

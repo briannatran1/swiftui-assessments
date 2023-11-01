@@ -8,34 +8,22 @@
 import Foundation
 import SwiftUI
 
-let token = "544d4d1b2635c36b9aee42dfedc884d44bd3e1ae"
+func getAssessments() async throws -> AssessmentsResponse {
+        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
+//        let token = "Brianna's token here"
+        guard let url = URL(string: "http://127.0.0.1:8000/api/assessmentsessions/") else {
+            fatalError("Invalid URL")
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.setValue("token \(token)", forHTTPHeaderField: "Authorization")
+        request.setValue("application/json", forHTTPHeaderField: "accept")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
-func fetchAssessments(completionHandler: @escaping ([Assessment]) -> Void) {
-//    var lotsOfAssessments: [Assessment]
-    let url = URL(string: "http://localhost:8000/api/assessmentsessions")!
-    
-    var request = URLRequest(url: url)
-    request.allHTTPHeaderFields = [
-        "Content-Type": "application/json",
-        "Authorization": "Token \(token)",
-        "Accept": "application/json"
-    ]
-    
-    URLSession.shared.dataTask(with: request) {(data, response, error) in
-        guard error == nil else { return }
-        guard let data = data, let _ = response else { return }
-        
-        //handle data
-        do {
-            let codabledata = try JSONDecoder().decode(AssessmentsResponse.self, from: data)
-//            completionHandler(lotsOfAssessments)
-            print(codabledata)
-        }
-        catch let parsingError {
-            print("Error", parsingError)
-        }
+        let (data, _) = try await URLSession.shared.data(for: request)
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let assessmentData = try decoder.decode(AssessmentsResponse.self, from: data)
+            print(assessmentData)
+            return(assessmentData)
     }
-    .resume()
-}
-
-//fetchAssessments()
