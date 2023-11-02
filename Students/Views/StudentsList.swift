@@ -11,7 +11,7 @@ struct StudentsList: View {
     @State private var students: StudentsResponse?
     var body: some View {
         List {
-            ForEach(students?.results ?? [], id: \.self) { student in
+            ForEach(students?.results ?? [], id: \.fullName) { student in
                 NavigationLink {
                     StudentDetail(student: student)
                 } label: {

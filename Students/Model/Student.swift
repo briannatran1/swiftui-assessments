@@ -16,8 +16,14 @@ struct StudentsResponse: Codable {
     let results: [Student]
 }
 
-struct Student: Codable Hashable {
-    let student: String
+struct Student: Codable, Hashable {
+    let fullName: String
+    let status: String
+    let apiUrl: String
+}
+
+struct StudentDetails: Codable {
+    let fullName: String
     let user: User
     let status: String
     let apiUrl: String
