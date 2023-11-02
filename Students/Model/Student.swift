@@ -31,8 +31,8 @@ struct User: Codable {
     let username: String
     let firstName: String
     let lastName: String
-    let pronoun: String
-    let bio: String
-    let photo: String
+    let pronoun: String?
+    let bio: String?
+    let photo: String?
 }
 

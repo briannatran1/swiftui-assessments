@@ -15,16 +15,30 @@ struct StudentDetail: View {
     var body: some View {
         ScrollView{
             VStack (alignment: .leading){
+                
+                AsyncImage(url: URL(string: studentDetail?.user.photo ?? "")) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipShape(Circle())
+                } placeholder: {
+                    Circle()
+                        .foregroundColor(.secondary)
+                }
+                    .frame(width: 120, height: 120)
+                
                 HStack{
-                    Text(studentDetail?.user.firstName ?? "First")
+                    Text(studentDetail?.user.firstName ?? "")
                         .font(.title)
                         .foregroundColor(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
                         .padding()
                     
-                    Text(studentDetail?.user.firstName ?? "Last")
+                    Text(studentDetail?.user.lastName ?? "")
                         .font(.title)
                         .foregroundColor(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
                         .padding()
+                    
+                    Text(studentDetail?.user.bio ?? "I don't have a bio :(")
                 }
                 
             }
