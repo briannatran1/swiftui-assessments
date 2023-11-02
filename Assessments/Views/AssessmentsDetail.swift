@@ -46,10 +46,11 @@ struct AssessmentsDetail: View {
                         .fontWeight(.semibold)
                         .foregroundColor(.gray)
                 }
-                if (assessmentDetail?.assetSet[0]) != nil {
-                    Link("Handout", destination: URL(string: assessmentDetail.assetSet?[0]))
-                        .foregroundColor(.blue)
-                }
+//                var x = print(assessmentDetail?.assetSet)
+//                if ((assessmentDetail?.assetSet[0]) != nil) {
+//                    Link("Handout", destination: URL(string: assessmentDetail?!.assetSet[0]) ?? <#default value#>!)
+//                        .foregroundColor(.blue)
+//                         }
                 
             }
             .padding()

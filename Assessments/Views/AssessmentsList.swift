@@ -27,7 +27,7 @@ struct AssessmentsList: View {
                 print(error)
             }
         }
-    } 
+    }
 }
 
 struct AssessmentsList_Previews: PreviewProvider {

@@ -45,7 +45,7 @@ struct AssessmentDetail: Codable, Identifiable, Hashable {
     var weekGroup: String
     var startAt: String
     var endAt: String
-    var assetSet: [String?]
+//    var assetSet: [String]
 //    var require_github_url: Bool
 //    var require_deployment_url: Bool
 //    var require_zipfile: Bool
