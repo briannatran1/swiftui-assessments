@@ -24,9 +24,8 @@ func getAssessments() async throws -> AssessmentsResponse {
         request.setValue("application/json", forHTTPHeaderField: "accept")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
-        let (data, response) = try await URLSession.shared.data(for: request)
+        let (data, _) = try await URLSession.shared.data(for: request)
         let decoder = JSONDecoder()
-    print(response)
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         let assessmentData = try decoder.decode(AssessmentsResponse.self, from: data)
         return assessmentData
@@ -92,11 +91,10 @@ func getStudentDetails(url: String) async throws -> StudentDetails {
         request.setValue("application/json", forHTTPHeaderField: "accept")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
-        let (data, response) = try await URLSession.shared.data(for: request)
+        let (data, _) = try await URLSession.shared.data(for: request)
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         let assessmentData = try decoder.decode(StudentDetails.self, from: data)
-        print(response)
         return assessmentData
 }
 

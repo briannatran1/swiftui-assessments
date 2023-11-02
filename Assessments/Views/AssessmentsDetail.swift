@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AssessmentsDetail: View {
 
+    // Assessment => our model
     var assessment: Assessment
     
     @State private var assessmentDetail: AssessmentDetail?

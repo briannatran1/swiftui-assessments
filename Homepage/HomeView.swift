@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-// can create token in django admin w/o login
-
 struct HomeView: View {
     var body: some View {
         VStack{

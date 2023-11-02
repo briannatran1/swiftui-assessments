@@ -34,5 +34,6 @@ struct User: Codable {
     let pronoun: String?
     let bio: String?
     let photo: String?
+    let location: String?
 }
 
