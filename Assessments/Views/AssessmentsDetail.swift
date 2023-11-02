@@ -17,10 +17,14 @@ struct AssessmentsDetail: View {
         ScrollView{
             VStack (alignment: .leading){
                 Text(assessmentDetail?.title ?? "placeholder Title")
+                    .frame(maxWidth: .infinity)
                     .font(.title)
-                    .foregroundColor(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
+                    .foregroundColor(.white)
                     .padding()
-                
+//                    .border(.red, width: 20)
+                    .background(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
+                    
+                    
                 Text(assessmentDetail?.weekGroup ?? "placeholder week group")
                     .fontWeight(.semibold)
                     .padding()
