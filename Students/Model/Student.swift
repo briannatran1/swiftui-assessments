@@ -23,10 +23,8 @@ struct Student: Codable, Hashable {
 }
 
 struct StudentDetails: Codable {
-    let fullName: String
+    let student: String
     let user: User
-    let status: String
-    let apiUrl: String
 }
 
 struct User: Codable {
