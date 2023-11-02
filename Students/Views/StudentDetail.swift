@@ -14,8 +14,7 @@ struct StudentDetail: View {
     
     var body: some View {
         ScrollView{
-            VStack (alignment: .leading){
-                
+            HStack {
                 AsyncImage(url: URL(string: studentDetail?.user.photo ?? "")) { image in
                     image
                         .resizable()
@@ -27,20 +26,18 @@ struct StudentDetail: View {
                 }
                     .frame(width: 120, height: 120)
                 
-                HStack{
-                    Text(studentDetail?.user.firstName ?? "")
+                VStack (alignment: .leading){
+                    Text("\(studentDetail?.user.firstName ?? "") \(studentDetail?.user.lastName ?? "")")
                         .font(.title)
                         .foregroundColor(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
                         .padding()
                     
-                    Text(studentDetail?.user.lastName ?? "")
-                        .font(.title)
-                        .foregroundColor(Color(hue: 1.0, saturation: 0.805, brightness: 0.926, opacity: 0.642))
-                        .padding()
-                    
+                    Text("(\(studentDetail?.user.pronoun ?? ""))")
+                        .foregroundColor(.gray)
+                        .padding(1)
+           
                     Text(studentDetail?.user.bio ?? "I don't have a bio :(")
                 }
-                
             }
             .padding()
             .task {

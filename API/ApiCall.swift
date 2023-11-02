@@ -10,9 +10,9 @@ import SwiftUI
 
 // gets all assessments for listing
 func getAssessments() async throws -> AssessmentsResponse {
-        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
-//        let token = "544d4d1b2635c36b9aee42dfedc884d44bd3e1ae"
-        guard let url = URL(string: "http://127.0.0.1:8000/api/assessmentsessions/") else {
+//        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
+        let token = "544d4d1b2635c36b9aee42dfedc884d44bd3e1ae"
+        guard let url = URL(string: "http://localhost:8000/api/assessmentsessions/") else {
             fatalError("Invalid URL")
         }
         var request = URLRequest(url: url)
@@ -30,9 +30,9 @@ func getAssessments() async throws -> AssessmentsResponse {
 
 // gets assessment details for specific assessment based on id
 func getAssessmentDetails(id: Int) async throws -> AssessmentDetail {
-        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
-//        let token = "544d4d1b2635c36b9aee42dfedc884d44bd3e1ae"
-        guard let url = URL(string: "http://127.0.0.1:8000/api/assessmentsessions/\(id)/") else {
+//        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
+        let token = "544d4d1b2635c36b9aee42dfedc884d44bd3e1ae"
+        guard let url = URL(string: "http://localhost:8000/api/assessmentsessions/\(id)/") else {
             fatalError("Invalid URL")
         }
         var request = URLRequest(url: url)
@@ -50,9 +50,9 @@ func getAssessmentDetails(id: Int) async throws -> AssessmentDetail {
 
 // gets students list
 func getStudents() async throws -> StudentsResponse {
-        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
-//        let token = "544d4d1b2635c36b9aee42dfedc884d44bd3e1ae"
-        guard let url = URL(string: "http://127.0.0.1:8000/api/students/") else {
+//        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
+        let token = "544d4d1b2635c36b9aee42dfedc884d44bd3e1ae"
+        guard let url = URL(string: "http://localhost:8000/api/students/") else {
             fatalError("Invalid URL")
         }
         var request = URLRequest(url: url)
@@ -70,8 +70,8 @@ func getStudents() async throws -> StudentsResponse {
 
 // gets students details for specific student
 func getStudentDetails(url: String) async throws -> StudentDetails {
-        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
-//        let token = "544d4d1b2635c36b9aee42dfedc884d44bd3e1ae"
+//        let token = "4a41260238aecf13a8a10a0c1df96c6e68571536"
+        let token = "544d4d1b2635c36b9aee42dfedc884d44bd3e1ae"
         guard let url = URL(string: url) else {
             fatalError("Invalid URL")
         }
