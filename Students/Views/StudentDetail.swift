@@ -37,6 +37,7 @@ struct StudentDetail: View {
                         .padding(1)
            
                     Text(studentDetail?.user.bio ?? "I don't have a bio :(")
+                    
                 }
             }
             .padding()
